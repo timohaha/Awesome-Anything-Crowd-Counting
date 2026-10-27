@@ -1,15 +1,10 @@
-# Awesome Biological Counting
+# Awesome-Anything-Crowd-Counting
 
 > 用计算机视觉 / 机器学习方法统计图像或视频中**生物个体数量**的论文、数据集与代码合集。
 > 收录对象包含人，但不限于人：鸟类、鱼群、昆虫、海洋哺乳动物、红外相机兽类、细胞与微生物等。
 >
 > 与人群计数（Crowd Counting）合集的区别：本仓库以**方法（Method）**为主轴组织，而非按年份罗列。
 
-<!--
-仓库英文名（目录名 / GitHub repo name）可在发布前自行修改，例如：
-Awesome-Biological-Counting / Awesome-Vision-Counting / Awesome-Animal-Counting。
-修改后同步更新本标题与下方所有相对链接即可。
--->
 
 ## Contents
 
