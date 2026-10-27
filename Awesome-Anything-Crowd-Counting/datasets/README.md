@@ -13,21 +13,22 @@
 
 ## 数据集总表
 
-| Dataset | Subject 对象 | Scene 场景 | Scale 规模 | Annotation 标注 | Split 划分 | Paper | Link |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| WorldExpo'10 | People | 多场景监控（108 场景） | 3980 标注图像 / 1132 视频序列 / 108 场景 | Point | 103 场景训练 / 5 场景测试 | [FSCC](#fscc)、[M-SFANet ](#m-sfanet)、[Stacked-Pool](#stacked-pool)、[MCNN](#mcnn) | 待补充 |
-| Mall | People | 商场室内监控 | 2000 帧 | Point | 800 训练 / 1200 测试 | [FSCC](#fscc)、[CS-SLR](#cs-slr)、[DeepCount](#deepcount)  | 待补充 |
-| Shanghai Tech Part A | People | 密集人群街头 | 300 训练 / 182 测试图像，241,677 标注，平均 501 人 | Point | 300 训练 / 182 测试 | [DeepCount](#deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet ](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) | 待补充 |
-| Shanghai Tech Part B | People | 稀疏街头 | 原文未详述图像数（稀疏街道场景） | Point | 原文未详述 | [DeepCount](#deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet ](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) | 待补充 |
-| UCF-QNRF | People | 稀疏 + 密集混合 | 1,251,642 标注，单图最多 12,865 标注 | Point | 原文未详述 | [DeepCount](#deepcount)、[MSCNN](#mscnn)、[M-SFANet ](#m-sfanet) | 待补充 |
-| UCSD | People | 室外监控 | 2000 帧，238×158，11–46 人 | Point | 800 训练 / 1200 测试 | [FSCC](#fscc)、[CS-SLR](#cs-slr)、[FE-VOC](#fe-voc)、[Hydra CNN](hydra-cnn)、[MCNN](#mcnn) | 待补充 |
-| UCF_CC_50 | People | 密集人群静态图 | 50 张灰度图，94–4543 人 | Point | 5 折交叉验证 | [CrowdNet](#crowdnet)、[M-SFANet ](#m-sfanet)、[FCNCC](#fcncc)、[Hydra CNN](hydra-cnn)、[MCNN](#mcnn) | 待补充 |
-|Beijing BRT| People | 北京快速公交站台监控 (含光照变化) | 1,280张图像 (640×360), 单图1~64人 | 头部中心点 (Point) | Train / Val / Test (按时间顺序划分) | [M-SFANet ](#m-sfanet)  | 待补充 |
-| Bacterial cell dataset | 细菌细胞 | 显微镜 | 5 个子集（不同训练样本数） | Point | 按子集划分 | [FE-VOC](#fe-voc) | 待补充 |
-| Synthetic cells（合成荧光显微镜细胞） | Cells | 荧光显微镜 | 200 张，171±64 细胞 | Region-level（弱监督） | 100 训练 / 100 测试 | [GP-WS](#gp-ws) | 待补充 |
-| Pedestrian（室外监控行人） | People | 室外监控视频 | 2000 张，29±9 人 | Region-level（弱监督） | 5 帧稀疏标注训练，其余评测 | [GP-WS](#gp-ws) | 待补充 |
-| Malaria（疟疾血涂片红细胞） | Cells | 显微镜血涂片 | 78 张，90±84 红细胞 | Region-level（弱监督） | 5 图训练 / 其余测试 | [GP-WS](#gp-ws) | 待补充 |
-| TRONCOS | 车辆 (Vehicle) | 高速公路及城市交通拥堵监控 | 1,244张图像, 46,796辆车 | 车辆中心点 (Point) + ROI | 官方提供 Train / Val / Test (常用5折) | [M-SFANet ](#m-sfanet)、[Hydra CNN](hydra-cnn)  | 待补充 |
+| Dataset | Subject 对象 | Scene 场景 | Scale 规模 | Annotation 标注 | Split 划分 | Link |
+| --- | --- | --- | --- | --- | --- | --- |
+| WorldExpo'10 | People | 多场景监控（108 场景） | 3980 标注图像 / 1132 视频序列 / 108 场景 | Point | 103 场景训练 / 5 场景测试 | 待补充 |
+| Mall | People | 商场室内监控 | 2000 帧 | Point | 800 训练 / 1200 测试 | 待补充 |
+| Shanghai Tech Part A | People | 密集人群街头 | 300 训练 / 182 测试图像，241,677 标注，平均 501 人 | Point | 300 训练 / 182 测试 | 待补充 |
+| Shanghai Tech Part B | People | 稀疏街头 | 原文未详述图像数（稀疏街道场景） | Point | 原文未详述 | 待补充 |
+| UCF-QNRF | People | 稀疏 + 密集混合 | 1,251,642 标注，单图最多 12,865 标注 | Point | 原文未详述 | 待补充 |
+| UCSD | People | 室外监控 | 2000 帧，238×158，11–46 人 | Point | 800 训练 / 1200 测试 | 待补充 |
+| UCF_CC_50 | People | 密集人群静态图 | 50 张灰度图，94–4543 人 | Point | 5 折交叉验证 | 待补充 |
+|Beijing BRT| People | 北京快速公交站台监控 (含光照变化) | 1,280张图像 (640×360), 单图1~64人 | 头部中心点 (Point) | Train / Val / Test (按时间顺序划分) | 待补充 |
+| Bacterial cell dataset | 细菌细胞 | 显微镜 | 5 个子集（不同训练样本数） | Point | 按子集划分 | 待补充 |
+| Synthetic cells（合成荧光显微镜细胞） | Cells | 荧光显微镜 | 200 张，171±64 细胞 | Region-level（弱监督） | 100 训练 / 100 测试 | 待补充 |
+| Pedestrian（室外监控行人） | People | 室外监控视频 | 2000 张，29±9 人 | Region-level（弱监督） | 5 帧稀疏标注训练，其余评测 | 待补充 |
+| Malaria（疟疾血涂片红细胞） | Cells | 显微镜血涂片 | 78 张，90±84 红细胞 | Region-level（弱监督） | 5 图训练 / 其余测试 | 待补充 |
+| TRONCOS | 车辆 (Vehicle) | 高速公路及城市交通拥堵监控 | 1,244张图像, 46,796辆车 | 车辆中心点 (Point) + ROI | 官方提供 Train / Val / Test (常用5折) | 待补充 |
+
 ### 字段说明
 
 - **Subject**：人 / 鸟 / 鱼 / 昆虫 / 海洋哺乳动物 / 红外相机兽类 / 细胞微生物等，可多个。
