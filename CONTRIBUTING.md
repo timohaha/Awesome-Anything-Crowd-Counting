@@ -51,7 +51,7 @@
 
 ## 数据集条目（填入 datasets/README.md）
 
-按 `datasets/README.md` 总表填写：`Dataset | Subject | Scene | Scale | Annotation | Split | Paper | Link`。
+按 `datasets/README.md` 总表填写：`Dataset | Subject | Scene | Scale | Annotation | Split | Link。
 
 - 只收公开可获取数据集，注明是否需注册 / 申请。
 - Annotation：Point / Box / Image-level，可组合。
