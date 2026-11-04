@@ -69,7 +69,7 @@
 
 > 第二索引：按收录对象反查，便于按物种/场景检索。各主干文件内也按对象分小节。
 
-- People（人 / 人群）：[FSSA](#fssa),[CS-SLR](#cs-slr),[CrowdNet](#crowdnet),[DeepCount](#deepcount)、[Stacked-Pool](#stacked-pool)、[FCNCC](#fcncc)、[MCNN](#mcnn);
+- People（人 / 人群）：[FSSA](#fssa),[CS-SLR](#cs-slr),[CrowdNet](#crowdnet),[DeepCount](#deepcount)、[Stacked-Pool](#stacked-pool)、[FCNCC](#fcncc)、[MCNN](#mcnn)、[EDC](#EDC);
 - Birds（鸟类）：（待补充）
 - Fish（鱼群）：（待补充）
 - Insects（昆虫：蜂、蚁等）：（待补充）
