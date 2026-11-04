@@ -15,17 +15,17 @@
 
 | Dataset | Subject 对象 | Scene 场景 | Scale 规模 | Annotation 标注 | Split 划分 | Link |
 | --- | --- | --- | --- | --- | --- | --- |
-| WorldExpo'10 | People | 多场景监控（108 场景） | 3980 标注图像 / 1132 视频序列 / 108 场景 | Point | 103 场景训练 / 5 场景测试 | 待补充 |
-| Mall | People | 商场室内监控 | 2000 帧 | Point | 800 训练 / 1200 测试 | 待补充 |
-| Shanghai Tech Part A | People | 密集人群街头 | 300 训练 / 182 测试图像，241,677 标注，平均 501 人 | Point | 300 训练 / 182 测试 | 待补充 |
-| Shanghai Tech Part B | People | 稀疏街头 | 原文未详述图像数（稀疏街道场景） | Point | 原文未详述 | 待补充 |
-| Fudan-ShanghaiTech (FDST) | People | 13台监控摄像头的100个视频序列 | 训练集 9,000 帧 (60视频) / 测试集 6,000 帧 (40视频) | Point | 60 视频训练 / 40 视频测试 | 待补充 |
-| UCF-QNRF | People | 稀疏 + 密集混合 | 1,251,642 标注，单图最多 12,865 标注 | Point | 原文未详述 | 待补充 |
-| UCSD | People | 室外监控 | 2000 帧，238×158，11–46 人 | Point | 800 训练 / 1200 测试 | 待补充 |
-| UCF_CC_50 | People | 密集人群静态图 | 50 张灰度图，94–4543 人 | Point | 5 折交叉验证 | 待补充 |
-|Beijing BRT| People | 北京快速公交站台监控 (含光照变化) | 1,280张图像 (640×360), 单图1~64人 | 头部中心点 (Point) | Train / Val / Test (按时间顺序划分) | 待补充 |
-| Bacterial cell dataset | 细菌细胞 | 显微镜 | 5 个子集（不同训练样本数） | Point | 按子集划分 | 待补充 |
-| Synthetic cells（合成荧光显微镜细胞） | Cells | 荧光显微镜 | 200 张，171±64 细胞 | Region-level（弱监督） | 100 训练 / 100 测试 | 待补充 |
+| WorldExpo'10 | People | 多场景监控（108 场景） | 3980 标注图像 / 1132 视频序列 / 108 场景 | Point | 103 场景训练 / 5 场景测试 | [[Homepage](http://www.ee.cuhk.edu.hk/~xgwang/expo.html)] |
+| Mall | People | 商场室内监控 | 2000 帧 | Point | 800 训练 / 1200 测试 | [[Homepage](http://personal.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html)]  |
+| Shanghai Tech Part A | People | 密集人群街头 | 300 训练 / 182 测试图像，241,677 标注，平均 501 人 | Point | 300 训练 / 182 测试 |  [[Homepage](https://github.com/desenzhou/ShanghaiTechDataset)]  |
+| Shanghai Tech Part B | People | 稀疏街头 | 原文未详述图像数（稀疏街道场景） | Point | 原文未详述 |  [[Homepage](https://github.com/desenzhou/ShanghaiTechDataset)] |
+| Fudan-ShanghaiTech (FDST) | People | 13台监控摄像头的100个视频序列 | 训练集 9,000 帧 (60视频) / 测试集 6,000 帧 (40视频) | Point | 60 视频训练 / 40 视频测试 |  [[Homepage](https://github.com/sweetyy83/Lstn_fdst_dataset)] [[Download](https://pan.baidu.com/share/init?surl=NNaJ1vtsxCPJUjDNhZ1sHA) (pwd:**sgt1**)]  |
+| UCF-QNRF | People | 稀疏 + 密集混合 | 1,251,642 标注，单图最多 12,865 标注 | Point | 原文未详述 | [[Homepage](https://www.crcv.ucf.edu/data/ucf-qnrf/)] [[Download](https://drive.google.com/open?id=1fLZdOsOXlv2muNB_bXEW6t-IS9MRziL6)] |
+| UCSD | People | 室外监控 | 2000 帧，238×158，11–46 人 | Point | 800 训练 / 1200 测试 | [[Homepage](http://www.svcl.ucsd.edu/projects/peoplecnt/ )] |
+| UCF_CC_50 | People | 密集人群静态图 | 50 张灰度图，94–4543 人 | Point | 5 折交叉验证 | [[Homepage](http://crcv.ucf.edu/data/ucf-cc-50/)] |
+|Beijing BRT| People | 北京快速公交站台监控 (含光照变化) | 1,280张图像 (640×360), 单图1~64人 | 头部中心点 (Point) | Train / Val / Test (按时间顺序划分) |   [[Homepage](https://github.com/XMU-smartdsp/Beijing-BRT-dataset)] |
+| Bacterial cell dataset | 细菌细胞 | 显微镜 | 5 个子集（不同训练样本数） | Point | 按子集划分 | [[Download](https://zenodo.org/records/23389427)] |
+| Synthetic cells（合成荧光显微镜细胞） | Cells | 荧光显微镜 | 200 张，171±64 细胞 | Region-level（弱监督） | 100 训练 / 100 测试 | [[Download](https://bbbc.broadinstitute.org/image_sets)]|
 | Pedestrian（室外监控行人） | People | 室外监控视频 | 2000 张，29±9 人 | Region-level（弱监督） | 5 帧稀疏标注训练，其余评测 | 待补充 |
 | Malaria（疟疾血涂片红细胞） | Cells | 显微镜血涂片 | 78 张，90±84 红细胞 | Region-level（弱监督） | 5 图训练 / 其余测试 | 待补充 |
 | TRONCOS | 车辆 (Vehicle) | 高速公路及城市交通拥堵监控 | 1,244张图像, 46,796辆车 | 车辆中心点 (Point) + ROI | 官方提供 Train / Val / Test (常用5折) | 待补充 |
