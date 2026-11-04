@@ -10,14 +10,14 @@
 - 公式：`MAE = (1/N) Σ |yᵢ − ŷᵢ|`
 - 方向：**越低越好**。
 - 说明：计数任务第一主指标，反映平均计数偏差，对异常误差不敏感。
-- 本批使用：[FSCC](#fscc)、[CS-SLR](#cs-slr)、[FE-VOC](#fe-voc)、[CrowdNet](#crowdnet)、[GP-WS](#gp-ws)、[DeepCount](deepcount)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[Hydra-CNN](#hydra-cnn)、[MCNN](#mcnn) 。
+- 本批使用：[FSCC](#fscc)、[CS-SLR](#cs-slr)、[FE-VOC](#fe-voc)、[CrowdNet](#crowdnet)、[GP-WS](#gp-ws)、[DeepCount](deepcount)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[Hydra-CNN](#hydra-cnn)、[MCNN](#mcnn) 、[EDC](#EDC)。
 
 ### MSE（Mean Squared Error，均方误差）/ RMSE（均方根误差）
 
 - 公式：`MSE = (1/N) Σ (yᵢ − ŷᵢ)²`；`RMSE = √MSE`
 - 方向：**越低越好**。
 - 说明：对大误差平方放大，惩罚高估 / 低估较多的样本，常与 MAE 并列报告。
-- 本批使用：MSE —— [CS-SLR](#cs-slr)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 。
+- 本批使用：MSE —— [CS-SLR](#cs-slr)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 、[EDC](#EDC)。
 
 ### MDE / 平均偏差（Mean Deviation Error）
 
