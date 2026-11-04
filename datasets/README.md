@@ -41,6 +41,7 @@
 
 ## 来源论文（条目格式）
 
+- <a name="EDC"></a>[**EDC**]Learning Error-Driven Curriculum for Crowd Counting(**ICPR,2020**)[[paper]](https://arxiv.org/pdf/2007.09676)[[code]](https://github.com/FDU-VTS/TutorNet_Crowd_Counting) ![GitHub stars](https://img.shields.io/github/stars/FDU-VTS/TutorNet_Crowd_Counting.svg?style=social&label=Stars)
 - <a name="fscc"></a>**[FSCC]** Few-Shot Scene Adaptive Crowd Counting Using Meta-Learning（**WACV 2020**）[[paper]](https://arxiv.org/abs/2002.00264)[[code]](https://github.com/maheshkkumar/fscc)
 - <a name="DeepCount"></a>[**DeepCount**]Deep Density-aware Count Regressor(**ECAI 2020**)[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)
 - <a name="M-SFANet"></a>[**M-SFANet**]Encoder-Decoder Based Convolutional Neural Networks with Multi-Scale-Aware Modules for Crowd Counting（**ICPR,2020**）[[paper]](https://arxiv.org/abs/2003.05586)[[code]](https://github.com/Pongpisit-Thanasutives/Variations-of-SFANet-for-Crowd-Counting)
@@ -64,4 +65,4 @@
 - Insects（昆虫）：（待补充）
 - Marine mammals（海洋哺乳动物）：（待补充）
 - Camera-trap mammals（红外相机兽类）：（待补充）
-- Other（其他）：（待补充）
+- Other（其他）：TRONCOS(车辆)
