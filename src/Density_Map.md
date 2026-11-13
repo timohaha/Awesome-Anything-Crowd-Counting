@@ -18,6 +18,7 @@
 ## 论文列表
 
 ### People（人 / 人群）
+- <a name="CHS-Net"></a>**[CHS-Net]** Cross-head Supervision for Crowd Counting with Noisy Annotations (**ICASSP，2023**)[[paper](https://arxiv.org/abs/2303.09245)] [[code](https://github.com/RaccoonDML/CHSNet)]![GitHub stars](http://img.shields.io/github/stars/RaccoonDML/CHSNet.svg?logo=github&label=Stars)
 - <a name="EDC"></a>[**EDC**]Learning Error-Driven Curriculum for Crowd Counting(**ICPR,2020**)[[paper]](https://arxiv.org/pdf/2007.09676)[[code]](https://github.com/FDU-VTS/TutorNet_Crowd_Counting) ![GitHub stars](https://img.shields.io/github/stars/FDU-VTS/TutorNet_Crowd_Counting.svg?style=social&label=Stars)
 - <a name="Stacked-Pool"></a>[**Stacked-Pool**]Stacked Pooling For Boosting Scale Invariance Of Crowd Counting(**ICASSP,2020**)[[paper]](https://siyuhuang.github.io/papers/ICASSP-2020-STACKED%20POOLING%20FOR%20BOOSTING%20SCALE%20INVARIANCE%20OF%20CROWD%20COUNTING.pdf)[[arxiv]](https://arxiv.org/abs/1808.07456)[[code]](https://github.com/siyuhuang/crowdcount-stackpool)
 - <a name="FCNCC"></a>[**FCNCC**]Fully Convolutional Crowd Counting On Highly Congested Scenes(**VISAPP,2017**)[[paper]](https://arxiv.org/abs/1612.00220)
