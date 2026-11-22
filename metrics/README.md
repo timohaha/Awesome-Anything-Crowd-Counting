@@ -10,14 +10,14 @@
 - 公式：`MAE = (1/N) Σ |yᵢ − ŷᵢ|`
 - 方向：**越低越好**。
 - 说明：计数任务第一主指标，反映平均计数偏差，对异常误差不敏感。
-- 本批使用：[FSCC](#fscc)、[CS-SLR](#cs-slr)、[FE-VOC](#fe-voc)、[CrowdNet](#crowdnet)、[GP-WS](#gp-ws)、[DeepCount](deepcount)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[Hydra-CNN](#hydra-cnn)、[MCNN](#mcnn) 、[EDC](#EDC)。
+- 本批使用：[FSCC](#fscc)、[CS-SLR](#cs-slr)、[FE-VOC](#fe-voc)、[CrowdNet](#crowdnet)、[GP-WS](#gp-ws)、[DeepCount](deepcount)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[Hydra-CNN](#hydra-cnn)、[MCNN](#mcnn) 、[EDC](#EDC)、[CHS-Net](#chs-net)、[SAFECount](#safecount)。
 
 ### MSE（Mean Squared Error，均方误差）/ RMSE（均方根误差）
 
 - 公式：`MSE = (1/N) Σ (yᵢ − ŷᵢ)²`；`RMSE = √MSE`
 - 方向：**越低越好**。
 - 说明：对大误差平方放大，惩罚高估 / 低估较多的样本，常与 MAE 并列报告。
-- 本批使用：MSE —— [CS-SLR](#cs-slr)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 、[EDC](#EDC)。
+- 本批使用：MSE —— [CS-SLR](#cs-slr)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 、[EDC](#EDC)、[CHS-Net](#chs-net)、[SAFECount](#safecount)。
 
 ### MDE / 平均偏差（Mean Deviation Error）
 
@@ -62,10 +62,12 @@
 <a name="使用论文条目库"></a>
 
 ## 使用论文条目库
-
+- <a name="SAFECount"></a>**[SAFECount]** Few-Shot Object Counting With Similarity-Aware Feature Enhancement (**WACV，2023**)[[paper](https://arxiv.org/abs/2201.08959)] [[code](https://github.com/zhiyuanyou/SAFECount)]![GitHub stars](http://img.shields.io/github/stars/zhiyuanyou/SAFECount.svg?logo=github&label=Stars)
+- <a name="CHS-Net"></a>**[CHS-Net]** Cross-head Supervision for Crowd Counting with Noisy Annotations (**ICASSP,2023**)[[paper](https://arxiv.org/abs/2303.09245)] [[code](https://github.com/RaccoonDML/CHSNet)]![GitHub stars](http://img.shields.io/github/stars/RaccoonDML/CHSNet.svg?logo=github&label=Stars)
 - <a name="EDC"></a>[**EDC**]Learning Error-Driven Curriculum for Crowd Counting(**ICPR,2020**)[[paper]](https://arxiv.org/pdf/2007.09676)[[code]](https://github.com/FDU-VTS/TutorNet_Crowd_Counting) ![GitHub stars](https://img.shields.io/github/stars/FDU-VTS/TutorNet_Crowd_Counting.svg?style=social&label=Stars)
-- <a name="FSCC"></a>**[FSCC]** Few-Shot Scene Adaptive Crowd Counting Using Meta-Learning（**WACV 2020**）[[paper]](https://arxiv.org/abs/2002.00264)[[code]](https://github.com/maheshkkumar/fscc)
-- <a name="DeepCount"></a>[**DeepCount**]Deep Density-aware Count Regressor(**ECAI 2020**)[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)
+- <a name="Stacked-Pool"></a>[**Stacked-Pool**]Stacked Pooling For Boosting Scale Invariance Of Crowd Counting(**ICASSP,2020**)[[paper]](https://siyuhuang.github.io/papers/ICASSP-2020-STACKED%20POOLING%20FOR%20BOOSTING%20SCALE%20INVARIANCE%20OF%20CROWD%20COUNTING.pdf)[[arxiv]](https://arxiv.org/abs/1808.07456)[[code]](https://github.com/siyuhuang/crowdcount-stackpool)
+- <a name="FSCC"></a>**[FSCC]** Few-Shot Scene Adaptive Crowd Counting Using Meta-Learning（**WACV，2020**）[[paper]](https://arxiv.org/abs/2002.00264)[[code]](https://github.com/maheshkkumar/fscc)
+- <a name="DeepCount"></a>[**DeepCount**]Deep Density-aware Count Regressor(**ECAI，2020**)[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)
 - <a name="M-SFANet"></a>[**M-SFANet**]Encoder-Decoder Based Convolutional Neural Networks with Multi-Scale-Aware Modules for Crowd Counting（**ICPR,2020**）[[paper]](https://arxiv.org/abs/2003.05586)[[code]](https://github.com/Pongpisit-Thanasutives/Variations-of-SFANet-for-Crowd-Counting)
 - <a name="FCNCC"></a>[**FCNCC**]Fully Convolutional Crowd Counting On Highly Congested Scenes(**VISAPP,2017**)[[paper]](https://arxiv.org/abs/1612.00220)
 - <a name="CS-SLR"></a>**[CS-SLR]** Cost-Sensitive Sparse Linear Regression for Crowd Counting with Imbalanced Training Data（**ICME 2016**）[[paper]](https://web.pkusz.edu.cn/adsp/files/2015/10/Cost-Sensitive-Sparse-Linear-Regression-For-Crowd-Counting-With-Imbalanced-Training-Data.pdf)
@@ -73,7 +75,6 @@
 - <a name="crowdnet"></a>**[CrowdNet]** CrowdNet: A Deep Convolutional Network for Dense Crowd Counting（**ACMMM 2016**）[[paper](https://arxiv.org/abs/1608.06197)]
 - <a name="GP-WS"></a>**[GP-WS]** Gaussian Process Density Counting from Weak Supervision（**ECCV 2016**）[[paper](https://doi.org/10.1007/978-3-319-46448-0_22)]
 - <a name="MSCNN"></a>[**MSCNN**]Multi-scale Convolution Neural Networks for Crowd Counting(**ICIP 2016**)[[paper]](https://arxiv.org/abs/1702.02359)[[code]](https://github.com/Ling-Bao/mscnn)
-- <a name="Stacked-Pool"></a>[**Stacked-Pool**]Stacked Pooling For Boosting Scale Invariance Of Crowd Counting(**ICASSP,2020**)[[paper]](https://siyuhuang.github.io/papers/ICASSP-2020-STACKED%20POOLING%20FOR%20BOOSTING%20SCALE%20INVARIANCE%20OF%20CROWD%20COUNTING.pdf)[[arxiv]](https://arxiv.org/abs/1808.07456)[[code]](https://github.com/siyuhuang/crowdcount-stackpool)
 - <a name="MCNN"></a>[**MCNN**] Single-Image Crowd Counting via Multi-Column Convolutional Neural Network(**CVPR,2016**)[[paper]](https://www.semanticscholar.org/paper/Single-Image-Crowd-Counting-via-Multi-Column-Neural-Zhang-Zhou/2dc3b3eff8ded8914c8b536d05ee713ff0cdf3cd?p2df)
 - <a name="Hydra-CNN"></a>[**Hydra-CNN**]Towards perspective-free object counting with deep learning (**ECCV,2016**)[[paper]](http://agamenon.tsc.uah.es/Investigacion/gram/publications/eccv2016-onoro.pdf) [[code]](https://github.com/gramuah/ccnn)
 
