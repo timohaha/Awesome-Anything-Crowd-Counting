@@ -17,8 +17,8 @@
 ## 论文列表
 
 ### People（人 / 人群）
-- <a name="CS-SLR"></a>[**CS-SLR**] Cost-sensitive sparse linear regression for crowd counting with imbalanced training data(**ICME,2016**)[[paper]](https://ieeexplore.ieee.org/document/7552905)
 - <a name="DeepCount"></a>**[DeepCount]** Deep Density-aware Count Regressor（**ECAI,2020**）[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)![GitHub stars](http://img.shields.io/github/stars/GeorgeChenZJ/deepcount.svg?logo=github&label=Stars)
+- <a name="CS-SLR"></a>[**CS-SLR**] Cost-sensitive sparse linear regression for crowd counting with imbalanced training data(**ICME,2016**)[[paper]](https://ieeexplore.ieee.org/document/7552905)
 
 
 ### Birds（鸟类）
