@@ -42,6 +42,10 @@
 | Pedestrian（室外监控行人） | People | 室外监控视频 | 2000 张，29±9 人 | Region-level（弱监督） | 5 帧稀疏标注训练，其余评测 | [[Page](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html)] |
 | Malaria（疟疾血涂片红细胞） | Cells | 显微镜血涂片 | 78 张，90±84 红细胞 | Region-level（弱监督） | 5 图训练 / 其余测试 | [[Page](https://bbbc.broadinstitute.org/BBBC041)] [[Download](https://data.broadinstitute.org/bbbc/BBBC041/malaria.zip)] |
 | TRONCOS | 车辆 (Vehicle) | 高速公路及城市交通拥堵监控 | 1,244张图像, 46,796辆车 | 车辆中心点 (Point) + ROI | 官方提供 Train / Val / Test (常用5折) | [[Page](https://gram.web.uah.es/data/datasets/trancos/)] |
+| FSC-147 | 多类别通用目标（147 类，人 / 动物 / 车辆 / 日常物品等） | 网络图像，多类别多样场景 | 6,135 张图像 / 147 类；单图 7–3,701 个目标（平均 56） | Point（目标中心点）+ Box（3 张 exemplar 框） | 训练 89 类 / 验证 29 类 / 测试 29 类（类别互斥，3-shot）；作者另设 4 折交叉验证（36/37/37/37 类，2033/1761/1239/1113 图），1-shot 与 3-shot | [[Homepage](https://github.com/cvlab-stonybrook/LearningToCountEverything)] [[Download](https://drive.google.com/file/d/1ymDYrGs9DSRicfZbSCDiOu0ikGDh5k6S/view?usp=sharing)] |
+| CARPK | 车辆 (Vehicle) | 无人机俯视停车场（4 个停车场，约 40m 高度） | 1,448 张图像 / 89,777 辆车 | Box（每车边界框，左上+右下点） | 3 个停车场训练 / 1 个停车场测试（按场景划分）；支持图从训练集采样 5 张 | [[Homepage](https://lafi.github.io/LPN/)] |
+| PUCPR+ | 车辆 (Vehicle) | 教学楼高层俯视停车场 | 125 张图像 / 16,916 辆车 | Box（每车边界框） | 原文未详述；支持图从训练集采样 5 张 | [[Homepage](https://lafi.github.io/LPN/)] |
+
 
 ## Metrics
 
@@ -70,14 +74,14 @@
 
 > 第二索引：按收录对象反查，便于按物种/场景检索。各主干文件内也按对象分小节。
 
-- People（人 / 人群）：[FSSA](#fssa),[CS-SLR](#cs-slr),[CrowdNet](#crowdnet),[DeepCount](#deepcount)、[Stacked-Pool](#stacked-pool)、[FCNCC](#fcncc)、[MCNN](#mcnn)、[EDC](#EDC)、[ASNet](#ASNet);
+- People（人 / 人群）：[FSSA](#fssa),[CS-SLR](#cs-slr),[CrowdNet](#crowdnet),[DeepCount](#deepcount)、[Stacked-Pool](#stacked-pool)、[FCNCC](#fcncc)、[MCNN](#mcnn)、[EDC](#EDC)、[ASNet](#ASNet)、[CHS-Net](#chs-net);
 - Birds（鸟类）：（待补充）
 - Fish（鱼群）：（待补充）
 - Insects（昆虫：蜂、蚁等）：（待补充）
 - Marine mammals（海洋哺乳动物）：（待补充）
 - Camera-trap mammals（红外相机兽类）：（待补充）
 - Cells & Microorganisms（细胞 / 微生物 / 浮游生物）：[DE-VOC](de-voc),[GP](#GP);
-- Other（其他）：[M-SFANet](#m-sfanet)、[Hydra-Cnn](#hydra-cnn);
+- Other（其他）：[M-SFANet](#m-sfanet)、[Hydra-Cnn](#hydra-cnn)、[SAFECount](#safecount)(包含人群、车辆、日常物品、动物);
 
 
 ## Contributing
