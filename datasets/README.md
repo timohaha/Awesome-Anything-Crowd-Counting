@@ -29,6 +29,11 @@
 | Pedestrian（室外监控行人） | People | 室外监控视频 | 2000 张，29±9 人 | Region-level（弱监督） | 5 帧稀疏标注训练，其余评测 | [[Page](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html)] |
 | Malaria（疟疾血涂片红细胞） | Cells | 显微镜血涂片 | 78 张，90±84 红细胞 | Region-level（弱监督） | 5 图训练 / 其余测试 | [[Page](https://bbbc.broadinstitute.org/BBBC041)] [[Download](https://data.broadinstitute.org/bbbc/BBBC041/malaria.zip)] |
 | TRONCOS | 车辆 (Vehicle) | 高速公路及城市交通拥堵监控 | 1,244张图像, 46,796辆车 | 车辆中心点 (Point) + ROI | 官方提供 Train / Val / Test (常用5折) | [[Page](https://gram.web.uah.es/data/datasets/trancos/)] |
+| FSC-147 | 多类别通用目标（147 类，人 / 动物 / 车辆 / 日常物品等） | 网络图像，多类别多样场景 | 6,135 张图像 / 147 类；单图 7–3,701 个目标（平均 56） | Point（目标中心点）+ Box（3 张 exemplar 框） | 训练 89 类 / 验证 29 类 / 测试 29 类（类别互斥，3-shot）；作者另设 4 折交叉验证（36/37/37/37 类，2033/1761/1239/1113 图），1-shot 与 3-shot | [[Homepage](https://github.com/cvlab-stonybrook/LearningToCountEverything)] [[Download](https://drive.google.com/file/d/1ymDYrGs9DSRicfZbSCDiOu0ikGDh5k6S/view?usp=sharing)] |
+| CARPK | 车辆 (Vehicle) | 无人机俯视停车场（4 个停车场，约 40m 高度） | 1,448 张图像 / 89,777 辆车 | Box（每车边界框，左上+右下点） | 3 个停车场训练 / 1 个停车场测试（按场景划分）；支持图从训练集采样 5 张 | [[Homepage](https://lafi.github.io/LPN/)] |
+| PUCPR+ | 车辆 (Vehicle) | 教学楼高层俯视停车场 | 125 张图像 / 16,916 辆车 | Box（每车边界框） | 原文未详述；支持图从训练集采样 5 张 | [[Homepage](https://lafi.github.io/LPN/)] |
+
+
 
 ### 字段说明
 
@@ -41,29 +46,29 @@
 - **Link**：下载页 / 项目主页，待核验补全。
 
 ## 来源论文（条目格式）
-- <a name="SAFECount"></a>**[SAFECount]** Few-Shot Object Counting With Similarity-Aware Feature Enhancement (**WACV**)[[paper](https://arxiv.org/abs/2201.08959)] [[code](https://github.com/zhiyuanyou/SAFECount)]![GitHub stars](http://img.shields.io/github/stars/zhiyuanyou/SAFECount.svg?logo=github&label=Stars)
+- <a name="SAFECount"></a>**[SAFECount]** Few-Shot Object Counting With Similarity-Aware Feature Enhancement (**WACV,2023**)[[paper](https://arxiv.org/abs/2201.08959)] [[code](https://github.com/zhiyuanyou/SAFECount)]![GitHub stars](http://img.shields.io/github/stars/zhiyuanyou/SAFECount.svg?logo=github&label=Stars)
 - <a name="CHS-Net"></a>**[CHS-Net]** Cross-head Supervision for Crowd Counting with Noisy Annotations (**ICASSP，2023**)[[paper](https://arxiv.org/abs/2303.09245)] [[code](https://github.com/RaccoonDML/CHSNet)]![GitHub stars](http://img.shields.io/github/stars/RaccoonDML/CHSNet.svg?logo=github&label=Stars)
+- <a name="Stacked-Pool"></a>[**Stacked-Pool**]Stacked Pooling For Boosting Scale Invariance Of Crowd Counting(**ICASSP,2020**)[[paper]](https://siyuhuang.github.io/papers/ICASSP-2020-STACKED%20POOLING%20FOR%20BOOSTING%20SCALE%20INVARIANCE%20OF%20CROWD%20COUNTING.pdf)[[arxiv]](https://arxiv.org/abs/1808.07456)[[code]](https://github.com/siyuhuang/crowdcount-stackpool)
 - <a name="EDC"></a>[**EDC**]Learning Error-Driven Curriculum for Crowd Counting(**ICPR,2020**)[[paper]](https://arxiv.org/pdf/2007.09676)[[code]](https://github.com/FDU-VTS/TutorNet_Crowd_Counting) ![GitHub stars](https://img.shields.io/github/stars/FDU-VTS/TutorNet_Crowd_Counting.svg?style=social&label=Stars)
-- <a name="fscc"></a>**[FSCC]** Few-Shot Scene Adaptive Crowd Counting Using Meta-Learning（**WACV 2020**）[[paper]](https://arxiv.org/abs/2002.00264)[[code]](https://github.com/maheshkkumar/fscc)
-- <a name="DeepCount"></a>[**DeepCount**]Deep Density-aware Count Regressor(**ECAI 2020**)[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)
+- <a name="fscc"></a>**[FSCC]** Few-Shot Scene Adaptive Crowd Counting Using Meta-Learning（**WACV,2020**）[[paper]](https://arxiv.org/abs/2002.00264)[[code]](https://github.com/maheshkkumar/fscc)
+- <a name="DeepCount"></a>[**DeepCount**]Deep Density-aware Count Regressor(**ECAI,2020**)[[paper]](https://arxiv.org/abs/1908.03314)[[code]](https://github.com/GeorgeChenZJ/deepcount)
 - <a name="M-SFANet"></a>[**M-SFANet**]Encoder-Decoder Based Convolutional Neural Networks with Multi-Scale-Aware Modules for Crowd Counting（**ICPR,2020**）[[paper]](https://arxiv.org/abs/2003.05586)[[code]](https://github.com/Pongpisit-Thanasutives/Variations-of-SFANet-for-Crowd-Counting)
 - <a name="FCNCC"></a>[**FCNCC**]Fully Convolutional Crowd Counting On Highly Congested Scenes(**VISAPP,2017**)[[paper]](https://arxiv.org/abs/1612.00220)
-- <a name="cs-slr"></a>**[CS-SLR]** Cost-Sensitive Sparse Linear Regression for Crowd Counting with Imbalanced Training Data（**ICME 2016**）[[paper]](https://web.pkusz.edu.cn/adsp/files/2015/10/Cost-Sensitive-Sparse-Linear-Regression-For-Crowd-Counting-With-Imbalanced-Training-Data.pdf)
-- <a name="fe-voc"></a>**[DE-VOC]** Fast Visual Object Counting via Example-based Density Estimation（**ICIP 2016**）[[paper](https://web.pkusz.edu.cn/adsp/files/2015/10/Fast-Visual-Object-Counting-via-Example-based-Density-Estimation.pdf)]
-- <a name="crowdnet"></a>**[CrowdNet]** CrowdNet: A Deep Convolutional Network for Dense Crowd Counting（**ACMMM 2016**）[[paper](https://arxiv.org/abs/1608.06197)]
-- <a name="gp-ws"></a>**[GP-WS]** Gaussian Process Density Counting from Weak Supervision（**ECCV 2016**）[[paper](https://doi.org/10.1007/978-3-319-46448-0_22)]
-- <a name="MSCNN"></a>[**MSCNN**]Multi-scale Convolution Neural Networks for Crowd Counting(**ICIP 2016**)[[paper]](https://arxiv.org/abs/1702.02359)[[code]](https://github.com/Ling-Bao/mscnn)
-- <a name="Stacked-Pool"></a>[**Stacked-Pool**]Stacked Pooling For Boosting Scale Invariance Of Crowd Counting(**ICASSP,2020**)[[paper]](https://siyuhuang.github.io/papers/ICASSP-2020-STACKED%20POOLING%20FOR%20BOOSTING%20SCALE%20INVARIANCE%20OF%20CROWD%20COUNTING.pdf)[[arxiv]](https://arxiv.org/abs/1808.07456)[[code]](https://github.com/siyuhuang/crowdcount-stackpool)
+- <a name="cs-slr"></a>**[CS-SLR]** Cost-Sensitive Sparse Linear Regression for Crowd Counting with Imbalanced Training Data（**ICME,2016**）[[paper]](https://web.pkusz.edu.cn/adsp/files/2015/10/Cost-Sensitive-Sparse-Linear-Regression-For-Crowd-Counting-With-Imbalanced-Training-Data.pdf)
+- <a name="fe-voc"></a>**[DE-VOC]** Fast Visual Object Counting via Example-based Density Estimation（**ICIP,2016**）[[paper](https://web.pkusz.edu.cn/adsp/files/2015/10/Fast-Visual-Object-Counting-via-Example-based-Density-Estimation.pdf)]
+- <a name="crowdnet"></a>**[CrowdNet]** CrowdNet: A Deep Convolutional Network for Dense Crowd Counting（**ACMMM,2016**）[[paper](https://arxiv.org/abs/1608.06197)]
+- <a name="gp-ws"></a>**[GP-WS]** Gaussian Process Density Counting from Weak Supervision（**ECCV,2016**）[[paper](https://doi.org/10.1007/978-3-319-46448-0_22)]
+- <a name="MSCNN"></a>[**MSCNN**]Multi-scale Convolution Neural Networks for Crowd Counting(**ICIP,2016**)[[paper]](https://arxiv.org/abs/1702.02359)[[code]](https://github.com/Ling-Bao/mscnn)
 - <a name="MCNN"></a>[**MCNN**] Single-Image Crowd Counting via Multi-Column Convolutional Neural Network(**CVPR,2016**)[[paper]](https://www.semanticscholar.org/paper/Single-Image-Crowd-Counting-via-Multi-Column-Neural-Zhang-Zhou/2dc3b3eff8ded8914c8b536d05ee713ff0cdf3cd?p2df)
 - <a name="Hydra-CNN"></a>[**Hydra-CNN**]Towards perspective-free object counting with deep learning (**ECCV,2016**)[[paper]](http://agamenon.tsc.uah.es/Investigacion/gram/publications/eccv2016-onoro.pdf) [[code]](https://github.com/gramuah/ccnn)
 
 ## 按对象速查
 
-- People（人 / 人群）：WorldExpo'10、Mall、UCSD、UCF_CC_50、Pedestrian、Shanghai Tech PartA、Shanghai Tech PartB、UCF-QNRF
+- People（人 / 人群）：WorldExpo'10、Mall、UCSD、UCF_CC_50、Pedestrian、Shanghai Tech PartA、Shanghai Tech PartB、UCF-QNRF、Fudan-ShanghaiTech (FDST)、Beijing BRT
 - Cells & Microorganisms（细胞 / 微生物 / 浮游生物）：Bacterial cell dataset、Synthetic cells、Malaria
 - Birds（鸟类）：（待补充）
 - Fish（鱼群）：（待补充）
 - Insects（昆虫）：（待补充）
 - Marine mammals（海洋哺乳动物）：（待补充）
 - Camera-trap mammals（红外相机兽类）：（待补充）
-- Other（其他）：TRONCOS(车辆)
+- Other（其他）：TRONCOS(车辆)、CARPK(车辆)、PUCPR+(车辆)、FSC-147(多类别通用目标（147 类，人 / 动物 / 车辆 / 日常物品等）)
