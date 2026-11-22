@@ -17,7 +17,7 @@
 - 公式：`MSE = (1/N) Σ (yᵢ − ŷᵢ)²`；`RMSE = √MSE`
 - 方向：**越低越好**。
 - 说明：对大误差平方放大，惩罚高估 / 低估较多的样本，常与 MAE 并列报告。
-- 本批使用：MSE —— [CS-SLR](#cs-slr)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 、[EDC](#EDC)、[CHS-Net](#chs-net)、[SAFECount](#safecount)。
+- 本批使用：MSE —— [CS-SLR](#cs-slr)、[CHS-Net](#chs-net)；RMSE —— [FSCC](#fscc)、[DeepCount](deepcount)、[MSCNN](#mscnn)、[Stacked-Pool](#stacked-pool)、[M-SFANet](#m-sfanet)、[FCNCC](#fcncc)、[MCNN](#mcnn) 、[EDC](#EDC)、[SAFECount](#safecount)。
 
 ### MDE / 平均偏差（Mean Deviation Error）
 
